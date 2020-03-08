@@ -15,7 +15,9 @@ python report.py
 下载release 封装了python, 无需安装Python环境
 
 注意:
-本项目自带的chromedriver适用于 版本为80.xx的chrome
+> 本项目需要安装chrome浏览器
+
+> 本项目自带的chromedriver适用于 版本为80.xx的chrome
 
 其他版本从这里下载 https://sites.google.com/a/chromium.org/chromedriver/downloads
 

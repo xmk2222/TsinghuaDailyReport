@@ -7,13 +7,13 @@ from selenium.common.exceptions import NoSuchElementException
 
 
 class Report(object):
-    def __init__(self, user_name, user_pass):
+    def __init__(self, user_name_, user_pass_):
         self.driver = webdriver.Chrome("chromedriver.exe")
         self.url = "https://thos.tsinghua.edu.cn/fp/view?m=fp#from=hall&" \
                    "serveID=d42b05be-1ad8-4d96-8c1e-14be2bb24e26&" \
                    "act=fp/serveapply"
-        self.user_name = user_name
-        self.user_pass = user_pass
+        self.user_name = user_name_
+        self.user_pass = user_pass_
 
     def run(self):
         try:
