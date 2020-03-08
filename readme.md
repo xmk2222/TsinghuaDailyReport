@@ -6,7 +6,10 @@
 
 #### 方法1 自带python
 pip install selenium
+
 配置 conf.ini
+
+python report.py
 
 #### 方法2 没有python 
 下载release 封装了python, 无需安装Python环境
@@ -16,7 +19,7 @@ pip install selenium
 
 其他版本从这里下载 https://sites.google.com/a/chromium.org/chromedriver/downloads
 
-python report.py
+
 
 创建定时任务https://www.cnblogs.com/wensiyang0916/p/5773828.html
 
