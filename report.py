@@ -16,8 +16,13 @@ class Report(object):
         self.user_pass = user_pass
 
     def run(self):
-        self.__get_report_page()
-        self.__submit_report()
+        try:
+            self.__get_report_page()
+            self.__submit_report()
+        except Exception as e:
+            print("执行失败", e)
+        finally:
+            self.driver.quit()
 
     def __get_report_page(self):
         self.driver.get(self.url)
@@ -50,5 +55,15 @@ class Report(object):
             print("提交成功")
 
 
+def load_info():
+    with open("conf.ini") as rf:
+        line = rf.readlines()
+        user_name_ = line[0].strip().split("=")[1].strip()
+        user_pass_ = line[1].strip().split("=")[1].strip()
+    return user_name_, user_pass_
+
+
 if __name__ == '__main__':
-    Report("xxx", "xxx").run()
+    user_name, user_pass = load_info()
+    Report(user_name, user_pass).run()
+    # Report("xxx", "xxx").run()
