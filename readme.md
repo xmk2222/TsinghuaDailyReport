@@ -15,3 +15,9 @@ pip install selenium
 python report.py
 
 创建定时任务https://www.cnblogs.com/wensiyang0916/p/5773828.html
+
+### 效果图
+![效果图1](https://github.com/naihaishy/TsinghuaDailyReport/blob/master/results/a.png) 
+![效果图2](https://github.com/naihaishy/TsinghuaDailyReport/blob/master/results/b.png) 
+![效果图3](https://github.com/naihaishy/TsinghuaDailyReport/blob/master/results/c.png) 
+![效果图4](https://github.com/naihaishy/TsinghuaDailyReport/blob/master/results/d.png) 
