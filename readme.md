@@ -4,8 +4,12 @@
 
 ### 使用说明
 
+#### 方法1 自带python
 pip install selenium
+配置 conf.ini
 
+#### 方法2 没有python 
+下载release 封装了python, 无需安装Python环境
 
 注意:
 本项目自带的chromedriver适用于 版本为80.xx的chrome
