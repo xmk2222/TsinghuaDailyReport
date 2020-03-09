@@ -9,6 +9,14 @@
 * python report.py
 * 创建定时任务 Windows/Linux
 
+如果你没有服务器，或者自己电脑也不能保证都开启，
+那么使用Github Action可以作为你的服务器。
+下面介绍如何使用Github Action 定时执行该项目
+* 创建github账户
+* fork该仓库
+* 
+
+
 [Windows 创建定时任务](https://www.cnblogs.com/wensiyang0916/p/5773828.html)
 
 ### 效果图

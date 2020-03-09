@@ -4,6 +4,7 @@
 import json
 import requests
 from bs4 import BeautifulSoup
+import os
 
 headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
@@ -42,10 +43,16 @@ class Report(object):
         self.form_data = None
 
     def run(self):
-        self.__login()
-        self.__get_server_info()
-        self.__get_data()
-        self.__submit_report()
+        try:
+            self.__login()
+        except Exception as e:
+            print("登录失败", e)
+        try:
+            self.__get_server_info()
+            self.__get_data()
+            self.__submit_report()
+        except Exception as e:
+            print("提交失败", e)
 
     def __login(self):
         """登录 获取cookie"""
@@ -175,5 +182,12 @@ def load_info():
 
 
 if __name__ == '__main__':
-    user_name, user_pass = load_info()
-    Report(user_name, user_pass).run()
+    # 首先检查环境变量中是否存在 USER_NAME USER_PASS
+    # 该功能用于Github Action部署
+    if os.getenv("USER_NAME") and os.getenv("USER_PASS"):
+        print("User info found in env")
+        user_name = os.getenv("USER_NAME")
+        user_pass = os.getenv("USER_PASS")
+    else:
+        user_name, user_pass = load_info()
+        Report(user_name, user_pass).run()
