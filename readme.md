@@ -8,6 +8,8 @@
 * 配置 conf.ini 输入清华info 用户名与密码
 * python report.py
 * 创建定时任务 Windows/Linux
+> [Windows 创建定时任务](https://www.cnblogs.com/wensiyang0916/p/5773828.html)
+
 
 > 如果你没有服务器，或者自己电脑也不能保证都开启，
 那么使用Github Action可以作为你的服务器,并且非常安全。
@@ -20,7 +22,7 @@
 
 OK !
 
-[Windows 创建定时任务](https://www.cnblogs.com/wensiyang0916/p/5773828.html)
+
 
 ### 效果图
 ![效果图1](https://github.com/naihaishy/TsinghuaDailyReport/blob/master/results/a.png) 
