@@ -10,7 +10,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  submit_report:
 
     runs-on: ubuntu-latest
 
