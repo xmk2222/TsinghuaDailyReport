@@ -5,7 +5,7 @@
 ### 使用说明
 
 * pip install -r requirements.txt
-* 配置 conf.ini
+* 配置 conf.ini 输入清华info 用户名与密码
 * python report.py
 * 创建定时任务 Windows/Linux
 
