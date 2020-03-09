@@ -190,4 +190,4 @@ if __name__ == '__main__':
         user_pass = os.getenv("USER_PASS")
     else:
         user_name, user_pass = load_info()
-        Report(user_name, user_pass).run()
+    Report(user_name, user_pass).run()
