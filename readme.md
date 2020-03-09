@@ -23,7 +23,8 @@
 OK !
 
 说明:
-Github Action的配置文件中配置了时间 默认是北京时间10:00 可以自行修改
+Github Action的配置文件(.github/workflows/deploy.yml)中配置了时间 
+默认是北京时间10:00 可以自行修改
 
 
 
