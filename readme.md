@@ -19,6 +19,7 @@
 * fork该仓库到你的项目，下面都是设置你的项目
 * 设置-> Secrets-> 添加 USER_NAME 与 USER_PASS为你Info的用户名与密码
 ![添加Secrets](https://github.com/naihaishy/TsinghuaDailyReport/blob/master/results/c.png)
+* 进入 Action 点击 Understand
 
 OK !
 
