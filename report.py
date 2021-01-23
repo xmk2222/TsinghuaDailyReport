@@ -136,7 +136,7 @@ class Report(object):
         response = requests.get(url=url_, headers=headers, cookies=cookies_)
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        form_data_str = soup.find("script", attrs={"id": "dcstr"}).extract().text
+        form_data_str = soup.find("script", attrs={"id": "dcstr"}).string
 
         self.form_data = eval(form_data_str, type('js', (dict,), dict(__getitem__=lambda k, n: n))())
 
