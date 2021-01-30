@@ -25,7 +25,7 @@ class Report(object):
         self.session = requests.session()
         self.session.headers.update(headers)
 
-        self.server_id = "d42b05be-1ad8-4d96-8c1e-14be2bb24e26"
+        self.server_id = "b44e2daf-0ef6-4d11-a115-0eb0d397934f"
         self.resource_id = ""
         self.process_id = ""
         self.user_id = ""
@@ -136,7 +136,7 @@ class Report(object):
         response = requests.get(url=url_, headers=headers, cookies=cookies_)
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        form_data_str = soup.find("script", attrs={"id": "dcstr"}).extract().text
+        form_data_str = soup.find("script", attrs={"id": "dcstr"}).extract().string
 
         self.form_data = eval(form_data_str, type('js', (dict,), dict(__getitem__=lambda k, n: n))())
 
